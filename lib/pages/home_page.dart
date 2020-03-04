@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mobile/widgets/carousel.dart';
+import 'package:mobile/widgets/home_page_grid.dart';
 import 'package:mobile/widgets/search_container.dart';
 import '../widgets/top_bar.dart';
 
@@ -23,6 +24,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
           Carausel(),
           SearchContainer(),
+          Expanded(child: HomePageGrid())
         ],
       )
     );

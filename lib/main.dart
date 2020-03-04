@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import './pages/home_page.dart';
+import 'package:mobile/pages/products.dart';
+import 'pages/home_page.dart';
+import 'pages/search.dart';
 
 void main() => runApp(MyApp());
 
@@ -9,6 +11,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: MyHomePage(),
       debugShowCheckedModeBanner: false,
+      initialRoute: '/',
+      routes: {
+        '/search': (context) =>  Search(),
+        '/products': (context) => Products(),
+      },
     );
   }
 }

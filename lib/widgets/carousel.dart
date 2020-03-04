@@ -11,7 +11,7 @@ class _CarauselState extends State<Carausel> {
   Widget build(BuildContext context) {
     return Container(
       child: CarouselSlider(
-        height: MediaQuery.of(context).size.height * 0.2,
+        height: MediaQuery.of(context).size.height * 0.22,
         aspectRatio: 16/9,
         autoPlay: true,
         pauseAutoPlayOnTouch: Duration(seconds: 6),

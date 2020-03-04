@@ -7,22 +7,26 @@ class SearchContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: MediaQuery.of(context).size.width,
-      height: MediaQuery.of(context).size.height * 0.08,
+      height: MediaQuery.of(context).size.height * 0.082,
       padding: EdgeInsets.only(top: 6, bottom: 6),
       color: Colors.red[500],
       child: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 18),
+        padding: EdgeInsets.symmetric(horizontal: 20),
         child: Material(
           elevation: 5.0,
           borderRadius: BorderRadius.all(Radius.circular(6)),
           child: TextField(
+            showCursor: false,
             onTap: () {
-              ////// Route to search page here
+              Navigator.pushNamed(
+                context,
+                '/search',
+              );
             },
             decoration: InputDecoration(
               hintText: 'Search Items',
               border: InputBorder.none,
-              contentPadding: EdgeInsets.symmetric(horizontal: 20, vertical: 2),
+              contentPadding: EdgeInsets.symmetric(horizontal: 20, vertical: 14),
               suffixIcon: Material(
                 child: Icon(
                   Icons.search,
