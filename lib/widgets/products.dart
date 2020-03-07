@@ -14,6 +14,7 @@ class _productsState extends State<products> {
     },
     {
     "name":"furniture",
+    
     "picture":"assets/product/fu1.jpg",
     "price":"121"
     },
