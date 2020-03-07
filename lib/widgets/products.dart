@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:mobile/widgets/single_product.dart';
+import 'package:mobile/widgets/Single_product.dart';
+import 'package:mobile/widgets/top_bar.dart';
 
 class products extends StatefulWidget {
   @override
@@ -55,12 +56,12 @@ class _productsState extends State<products> {
   ];
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-          child: GridView.builder(
+    return Container(
+        child: GridView.builder(
         itemCount: product_list.length,
         gridDelegate: new SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
          itemBuilder: (BuildContext context, int index){
-           return single_product(
+           return Single_product(
              prod_name: product_list[index]['name'],
              prod_picture: product_list[index]['picture'],
              prod_price: product_list[index]['price'],

@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-class single_product  extends StatelessWidget {
+class Single_product  extends StatelessWidget {
   final prod_name;
   final prod_price;
   final prod_picture;
-  
 
-  single_product({
+
+  Single_product({
     this.prod_name,
     this.prod_picture,
     this.prod_price,

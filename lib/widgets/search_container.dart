@@ -13,7 +13,7 @@ class SearchContainer extends StatelessWidget {
       child: Padding(
         padding: EdgeInsets.symmetric(horizontal: 18),
         child: Material(
-          elevation: 5.0,
+          elevation: 5.0, 
           borderRadius: BorderRadius.all(Radius.circular(6)),
           child: TextField(
             onTap: () {
