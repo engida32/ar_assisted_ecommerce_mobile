@@ -1,26 +1,29 @@
 import 'package:flutter/material.dart';
+import 'package:mobile/widgets/single_product.dart';
 
 class products extends StatefulWidget {
   @override
-  _productsState createState() => _productsState();
+  _productsState createState() {
+    return _productsState();
+  }
 }
 
 class _productsState extends State<products> {
   var product_list =[
     {
     "name":"furniture",
-    "picture":"assets/product/f2.jpg",
+    "picture":"assets/product/f4.jpeg",
     "price":"121"
     },
     {
     "name":"furniture",
-    
-    "picture":"assets/product/fu1.jpg",
+
+    "picture":"assets/product/f4.jpeg",
     "price":"121"
     },
      {
     "name":"furniture",
-    "picture":"assets/product/f3.png",
+    "picture":"assets/product/f4.jpeg",
     "price":"121"
     },
      {
@@ -31,12 +34,12 @@ class _productsState extends State<products> {
 
     {
     "name":"furniture",
-    "picture":"assets/product/fu1.jpg",
+    "picture":"assets/product/f4.jpeg",
     "price":"121"
     },
      {
     "name":"furniture",
-    "picture":"assets/product/f3.png",
+    "picture":"assets/product/f4.jpeg",
     "price":"121"
     },
      {
@@ -67,35 +70,6 @@ class _productsState extends State<products> {
 
 }
 }
-class single_product  extends StatelessWidget {
-  final prod_name;
-  final prod_price;
-  final prod_picture;
 
-  single_product({
-    this.prod_name,
-    this.prod_picture,
-    this.prod_price,
-  });
-  @override
-  Widget build(BuildContext context) {
-    return Card(
-      child: Hero(tag: 
-      prod_name, 
-      child: InkWell(onTap: (){},
-      child: GridTile(
-        footer: Container(
-          color: Colors.white70,
-           child: ListTile(
-          leading: Text(prod_name, style: TextStyle( fontWeight: FontWeight.normal),),
-        )),
-        child: Image.asset(prod_picture, fit: BoxFit.cover,),
-        ),
-       )),
-    
-      
-    );
-  }
-}
 // security
 //AR
