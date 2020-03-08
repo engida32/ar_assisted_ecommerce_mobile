@@ -73,7 +73,19 @@ class HomePageGrid extends StatelessWidget {
             'Jewellery',
             Icon(Icons.camera)
           ),
+          Center(
+            child: Row(
+              children: <Widget>[
+                Center(child: RaisedButton(
+                  child: Text('navigate'),
+                  onPressed: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=> Products()));
+                  })),
+              ],
+            ),
+          )
         ],
+        
       ),
     );
   }
