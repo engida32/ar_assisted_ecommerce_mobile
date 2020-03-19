@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mobile/pages/products.dart';
+import 'package:mobile/widgets/tab_bar_view.dart';
 import 'pages/home_page.dart';
 import 'pages/search.dart';
 import 'package:mobile/pages/product_detail.dart';
@@ -12,11 +13,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: MyHomePage(),
       debugShowCheckedModeBanner: false,
-      initialRoute: '/products',
+      initialRoute: '/tab_bar',
       routes: {
-        '/search': (context) =>  Search(),
+        '/search': (context) => Search(),
         '/products': (context) => Products(),
-        '/product_details': (context) => ProductDetail(),
+        '/product_details': (context) => MyPageView(),
+        '/tab_bar': (context) => NestedTabBar()
       },
     );
   }

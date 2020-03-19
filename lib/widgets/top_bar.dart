@@ -9,7 +9,7 @@ class TopBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.red[600],
-      padding: EdgeInsets.fromLTRB(8, 35, 8, 6),
+      padding: EdgeInsets.fromLTRB(8, 45, 8, 6),
       margin: EdgeInsets.only(bottom: 2),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
