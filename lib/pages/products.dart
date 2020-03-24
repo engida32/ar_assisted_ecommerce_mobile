@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../models/product_model.dart';
 
 class Products extends StatefulWidget {
   @override
@@ -13,7 +14,12 @@ class _ProductsState extends State<Products> {
 
     return Scaffold(
       body: Container(
-        child: Center(child: Text(args.category))
+        child: Column(
+          children: <Widget>[
+            Center(child: Text(args.category)),
+            Expanded(child: Graphql()),
+          ],
+        )
       ),
     );
   }
