@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mobile/widgets/tab_bar_view.dart';
+import 'package:mobile/widgets/nested_tab_bar.dart';
 import '../pages/product_detail.dart';
 
 class SingleProduct extends StatelessWidget {

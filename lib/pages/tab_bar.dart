@@ -1,30 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:mobile/widgets/tab_bar_view.dart';
+import 'package:mobile/widgets/nested_tab_bar.dart';
 import 'package:mobile/widgets/top_bar.dart';
 
-void main() => runApp(MyApp());
-
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Tab Bar',
-      theme: ThemeData(
-        primarySwatch: Colors.teal,
-      ),
-      home: MyHomePage(title: 'Nested Tab Bar Demo Page'),
-    );
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
+class TabBar extends StatefulWidget {
+  TabBar({Key key, this.title}) : super(key: key);
   final String title;
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  _TabBarState createState() => _TabBarState();
 }
 
-class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
+class _TabBarState extends State<TabBar> with TickerProviderStateMixin {
   TabController _tabController;
 
   @override
