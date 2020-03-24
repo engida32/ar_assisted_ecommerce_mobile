@@ -13,11 +13,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: MyHomePage(),
       debugShowCheckedModeBanner: false,
-      initialRoute: '/tab_bar',
+      initialRoute: '/products',
       routes: {
         '/search': (context) => Search(),
         '/products': (context) => Products(),
-        '/product_details': (context) => MyPageView(),
+        '/product_details': (context) => ProductDetail(),
         '/tab_bar': (context) => NestedTabBar()
       },
     );

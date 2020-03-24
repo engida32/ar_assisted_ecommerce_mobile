@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../widgets/single_product.dart';
+import '../widgets/product_grid_item.dart';
 import '../widgets/top_bar.dart';
 
 class Products extends StatefulWidget {

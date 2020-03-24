@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:mobile/widgets/tab_bar_view.dart';
+import '../pages/product_detail.dart';
 
 class SingleProduct extends StatelessWidget {
   final prodName;
@@ -16,7 +18,8 @@ class SingleProduct extends StatelessWidget {
       child: Hero(
           tag: prodName,
           child: InkWell(
-            onTap: () {},
+            onTap: () => Navigator.push(context,
+                MaterialPageRoute(builder: (context) => ProductDetail())),
             child: GridTile(
               footer: Container(
                   color: Colors.white.withOpacity(0.4),
