@@ -18,8 +18,11 @@ class SingleProduct extends StatelessWidget {
       child: Hero(
           tag: prodName,
           child: InkWell(
-            onTap: () => Navigator.push(context,
-                MaterialPageRoute(builder: (context) => ProductDetail())),
+            onTap: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => ProductDetail(),
+                )),
             child: GridTile(
               footer: Container(
                   color: Colors.white.withOpacity(0.4),

@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         '/search': (context) => Search(),
         '/products': (context) => Products(),
         '/product_details': (context) => ProductDetail(),
-        '/tab_bar': (context) => NestedTabBar()
+        '/tab_bar': (context) => NestedTabBar(),
       },
     );
   }

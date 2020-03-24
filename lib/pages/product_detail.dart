@@ -12,7 +12,7 @@ class _ProductDetailState extends State<ProductDetail> {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.red,
-      child: Text("welcome"),
+      child: RaisedButton(onPressed: null),
     );
   }
 }
