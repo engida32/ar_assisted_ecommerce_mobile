@@ -40,6 +40,10 @@ flutter:
     - assets/images/carousel1.jpg
     - assets/images/carousel2.jpg
     - assets/images/carousel3.jpg
+    - assets/product/fu1.jpg
+    - assets/product/f2.jpg
+    - assets/product/f3.png
+    - assets/product/f4.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
   # For details regarding adding assets from package dependencies, see

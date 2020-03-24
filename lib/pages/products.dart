@@ -7,20 +7,29 @@ class Products extends StatefulWidget {
 }
 
 class _ProductsState extends State<Products> {
+  var productList = [
+    {"name": "furniture", "picture": "assets/product/f4.jpeg", "price": "121"},
+    {"name": "furniture", "picture": "assets/product/f4.jpeg", "price": "121"},
+    {"name": "furniture", "picture": "assets/product/f4.jpeg", "price": "121"},
+    {"name": "furniture", "picture": "assets/product/f4.jpeg", "price": "121"},
+    {"name": "furniture", "picture": "assets/product/f4.jpeg", "price": "121"},
+    {"name": "furniture", "picture": "assets/product/f4.jpeg", "price": "121"},
+    {"name": "furniture", "picture": "assets/product/f4.jpeg", "price": "121"},
+    {"name": "furniture", "picture": "assets/product/f4.jpeg", "price": "121"},
+  ];
+
   @override
   Widget build(BuildContext context) {
-
     final ProductArguments args = ModalRoute.of(context).settings.arguments;
 
     return Scaffold(
       body: Container(
-        child: Column(
-          children: <Widget>[
-            Center(child: Text(args.category)),
-            Expanded(child: Graphql()),
-          ],
-        )
-      ),
+          child: Column(
+        children: <Widget>[
+          Center(child: Text(args.category)),
+          Expanded(child: Graphql()),
+        ],
+      )),
     );
   }
 }
