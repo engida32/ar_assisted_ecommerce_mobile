@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mobile/widgets/tab_bar_view.dart';
+import 'package:mobile/widgets/nested_tab_bar.dart';
 import 'package:mobile/widgets/top_bar.dart';
 
 class MyApp extends StatelessWidget {
@@ -19,10 +19,10 @@ class MyHomePage extends StatefulWidget {
   MyHomePage({Key key, this.title}) : super(key: key);
   final String title;
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  _TabBarState createState() => _TabBarState();
 }
 
-class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
+class _TabBarState extends State<TabBar> with TickerProviderStateMixin {
   TabController _tabController;
 
   @override

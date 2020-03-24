@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mobile/pages/products.dart';
-import 'package:mobile/widgets/tab_bar_view.dart';
+import 'package:mobile/widgets/nested_tab_bar.dart';
 import 'pages/home_page.dart';
 import 'pages/search.dart';
 import 'package:mobile/pages/product_detail.dart';
